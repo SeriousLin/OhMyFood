@@ -1,0 +1,18 @@
+/* Colors */
+/* Background colors */
+/* Font size */
+/* Les polices */
+@font-face {
+  font-family: "Roboto";
+  src: url("/style/police/Roboto-Regular.ttf");
+}
+body {
+  font-family: "Roboto";
+  background: #FFFFFF;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */
