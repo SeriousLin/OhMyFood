@@ -1,5 +1,13 @@
-header{
+.header {
     width: 100%;
-    margin: auto;
-    
-}
+    margin: 6px auto;
+    display: flex;
+    justify-content: center;
+
+    &__logo {
+        width: 162px;
+        height: 44px;
+        position: static;
+    }
+
+ }

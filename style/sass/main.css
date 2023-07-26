@@ -1,18 +1,136 @@
 /* Colors */
 /* Background colors */
 /* Font size */
+/* Button */
 /* Les polices */
 @font-face {
   font-family: "Roboto";
   src: url("/style/police/Roboto-Regular.ttf");
 }
-body {
+* {
   font-family: "Roboto";
-  background: #FFFFFF;
-  margin: 0 auto;
+  font-size: 16px;
 }
 
-header {
+h1, h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+body {
+  background: #FFFFFF;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
   width: 100%;
+  margin: 6px auto;
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  width: 162px;
+  height: 44px;
+  position: static;
+}
+
+.steps {
+  margin: 40px 20px 70px;
+}
+.steps__cards {
+  padding: 0px;
+  cursor: pointer;
+}
+.steps__items {
+  width: 92%;
+  padding: 13px;
+  margin: 24px auto;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+}
+.steps__circle {
+  background: #9356DC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 23px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 2%;
+}
+.steps__icon {
+  margin: 0px 27px 0px 21px;
+  font-size: 20px;
+}
+
+.resto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+}
+.resto h2 {
+  margin: 42px 0px 16px;
+}
+.resto__cards {
+  display: flex;
+  flex-direction: column;
+}
+.resto .card {
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+.resto .card__photo {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.resto .card__text {
+  height: 77px;
+}
+
+.reservation__btn {
+  border-radius: 50px;
+  padding: 15px 25px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background: linear-gradient(#9356DC, #FF79DA);
+  margin: 27px auto 50px;
+}
+
+main .location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #EAEAEA;
+  color: #353535;
+  font-weight: 500;
+}
+main .location__item {
+  margin: auto 17px;
+}
+main .location__text {
+  font-weight: 500;
+}
+
+.reservation {
+  width: 100%;
+  background: #F6F6F6;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.reservation__title {
+  width: 83%;
+  margin: 40px auto 0px;
 }/*# sourceMappingURL=main.css.map */

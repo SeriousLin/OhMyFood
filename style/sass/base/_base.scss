@@ -1,5 +1,17 @@
-body{
+*{
     font-family: 'Roboto';
-    background: $bg-white;
+    font-size: $font-size;
+}
+
+h1, h2 {
+    font-size: $font-size-title;
+    font-weight: 700;
+}
+
+body {
+    background: $bg-white ;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
 }
