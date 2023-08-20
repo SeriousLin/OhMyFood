@@ -1,9 +1,10 @@
 *{
     font-family: 'Roboto';
     font-size: $font-size;
+    
 }
 
-h1, h2 {
+h1 h2 {
     font-size: $font-size-title;
     font-weight: 700;
 }
@@ -14,4 +15,15 @@ body {
     display: flex;
     flex-direction: column;
 
+    
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card, .steps__items {
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
 }

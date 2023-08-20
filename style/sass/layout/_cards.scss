@@ -1,28 +1,30 @@
 .steps {
     margin: 40px 20px 70px;
-    
+
 
     &__cards {
+        display: flex;
+        flex-direction: column;
         padding: 0px;
-        cursor: pointer;
+
     }
 
     &__items {
-        width: 92%;
+        width: 88%;
         padding: 13px;
         margin: 24px auto;
         border-radius: 20px;
         background-color: #f6f6f6;
         display: flex;
         align-items: center;
-        
+
     }
 
     &__circle {
         background: $color-primary;
         color: $color-primary-light;
         border-radius: 50%;
-        width: 23px;
+        width: 20px;
         padding: 3px;
         display: flex;
         justify-content: center;
@@ -41,22 +43,45 @@
     display: flex;
     flex-direction: column;
     background: $bg-gray-light;
-    
+
 
     h2 {
-        margin: 42px 0px 16px;
+        margin: 42px 20px 16px;
+        font-size: $font-size-title;
     }
-    
+
     &__cards {
         display: flex;
         flex-direction: column;
-       
+        padding: 17px 17px 66px 17px;
+
     }
 
     .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         background: $bg-white;
         border-radius: 15px;
         margin-bottom: 18px;
+
+        &__link {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+        
+        }
+
+        &__content {
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
 
         &__photo {
             width: 100%;
@@ -65,9 +90,24 @@
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
         }
-        
+
         &__text {
-            height: 77px;
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 16px 13px;
+            margin: 0;
+
+            h3,
+            p {
+                margin: 0;
+            }
+
         }
+
+
     }
+
+
 }

@@ -5,5 +5,26 @@
     cursor: pointer;
     background: linear-gradient($color-primary, $color-secondary);
     margin: 27px auto 50px;
+    border: none;
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+    
+
+    &:hover {
+        background: linear-gradient(180deg, lighten($color-secondary,3), lighten($color-primary,5));
+        box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+
+
+    }
 }
 
+.heart {
+    width: 22px;
+
+
+    &:hover {
+        
+
+    }
+
+
+}
