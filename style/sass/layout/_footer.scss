@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 100%;
+    height: auto;
     color: $color-primary-light;
     background: $bg-gray;
     
@@ -15,7 +15,7 @@
         margin-bottom: 0px;
         font-family: 'Shrikhand';
         font-size: 18px;
-        font-weight: 900;
+        font-weight: 400;
         font-style: italic;
         
     }

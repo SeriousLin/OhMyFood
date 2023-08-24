@@ -2,7 +2,11 @@
     width: 100%;
     margin: 6px auto;
     display: flex;
+    align-items: center;
     justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
 
     &__logo {
         width: 162px;
@@ -10,4 +14,13 @@
         position: static;
     }
 
+    &__back {
+        position: absolute;
+        top: 25%;
+        left: 6%;
+
+        .back i {
+            font-size: 20px;
+        }
+    }
  }

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,29 +18,150 @@
 <body>
     <header class="header">
         <a class="header__back">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="back fa-solid fa-arrow-left"></i>
         </a>
         <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
     </header>
 
     <main class="main">
-        <img class="main__banner" src="images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash"
+        <img class="main__banner" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
             alt="menu la palette du goût">
-        <section class="main__menu">
-            <h1 class="menu__title">La palette du goût</h1>
-            <div><i class="heart fa-regular fa-heart"></i></div>
-            <div class="menu__cards">
+        <section class="menu">
+            <div class="menu__top">
+                <h1 class="menu-title">La palette du goût</h1>
+                <div><i class="heart fa-regular fa-heart"></i></div>
+            </div>
+            <div>
                 <h2 class="subtitle">Entrées</h2>
-                <article class="content__cards">
-                    <div class="meal">
-                        <h3>Fricassée d'escargots</h3>
-                        <p>Au piment d'Espelette</p>
-                    </div>
-                    <div>25€</div>
-                </article>
+                <div class="menu-cards">
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Fricassée d'escargots</h3>
+                            <p>Au piment d'Espelette</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>25€</span></p>
+                        </div>
+                        <div class="meal__check"><i class="item-check fa-solid fa-circle-check"></i></div>
+                    </article>
+
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Foie gras de canard mi-cuit</h3>
+                            <p>Et ses copeaux de truffe noire</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>35€</span></p>
+                        </div>
+                    </article>
+
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Œuf au plat</h3>
+                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>20€</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div>
+                <h2 class="subtitle">Plats</h2>
+                <div class="menu-cards">
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Filet de bœuf aux herbes</h3>
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>40€</span></p>
+                        </div>
+                    </article>
+
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Parmentier de queue de bœuf</h3>
+                            <p>À la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>35€</span></p>
+                        </div>
+                    </article>
+
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Filet de turbot</h3>
+                            <p>Aux agrumes</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>44€</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div>
+                <h2 class="subtitle">Desserts</h2>
+                <div class="menu-cards">
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Paris-Brest</h3>
+                            <p>Revisité</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>18€</span></p>
+                        </div>
+                    </article>
+
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Macaron au chocolat d'exception</h3>
+                            <p>Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>22€</span></p>
+                        </div>
+                    </article>
+
+                    <article class="meal">
+                        <div class="meal__content">
+                            <h3>Mousse au chocolat </h3>
+                            <p>Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+                        <div class="euro">
+                            <p><span>23€</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="command">
+                <a class="command__btn" href="">
+                    <button class="btn">Commander</button>
+                </a>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <h2>ohmyfood</h2>
+            <ul>
+                <li class="footer__nav">
+                    <i class="fa-solid fa-utensils"></i>
+                    <a class="nav__link" href="#">Proposer un restaurant</a>
+                </li>
+                <li class="footer__nav">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <a class="nav__link" href="#">Devenir partenaire</a>
+                </li>
+                <li class="footer__nav">
+                    <a class="nav__link" href="#">Mentions légales</a>
+                </li>
+                <li class="footer__nav">
+                    <a class="nav__link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

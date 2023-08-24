@@ -1,30 +1,55 @@
-.reservation__btn {
+.btn {
+    width: 218px;
+    height: 50px;
     border-radius: 50px;
     padding: 15px 25px;
     color: $color-primary-light;
     cursor: pointer;
     background: linear-gradient($color-primary, $color-secondary);
-    margin: 27px auto 50px;
+    font-size: 15px;
     border: none;
     box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
-    
+
 
     &:hover {
-        background: linear-gradient(180deg, lighten($color-secondary,3), lighten($color-primary,5));
+        background: linear-gradient(180deg, lighten($color-secondary, 3), lighten($color-primary, 5));
         box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
 
 
     }
 }
 
+.reservation__btn {
+    width: 100%;
+    height: auto;
+    margin: 27px auto 50px;
+}
+
+
 .heart {
-    width: 22px;
+    font-size: 28px;
+    cursor: pointer;
+    
 
 
-    &:hover {
-        
+    // &:hover {
 
+
+    // }
+
+
+}
+
+.command {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    &__btn {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        text-align: center;
     }
-
 
 }
