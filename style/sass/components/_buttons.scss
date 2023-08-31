@@ -25,20 +25,79 @@
     margin: 27px auto 50px;
 }
 
+.item-like-home {
+    position: relative;
+    i {
+        font-size: 28px;
+        position: absolute;
+        right: 14px;
+        bottom: -12px;
+        
+    }
 
-.heart {
-    font-size: 28px;
-    cursor: pointer;
-    
+    .heart-full {
+        font-size: 28px;
+        cursor: pointer;
 
+        opacity: 0;
+        transition: all 0.4s;
 
-    // &:hover {
+        &:hover {
+            font-size: 28px;
+            opacity: 1;
+            background-image: linear-gradient($color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
 
-
-    // }
-
-
+        &:active {
+            font-size: 28px;
+            opacity: 1;
+            background-image: linear-gradient($color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
 }
+
+.item-like {
+    i {
+        font-size: 28px;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+
+    .heart-full {
+        font-size: 28px;
+        cursor: pointer;
+
+        opacity: 0;
+        transition: all 0.4s;
+
+        &:hover {
+            font-size: 28px;
+            opacity: 1;
+            background-image: linear-gradient($color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        &:active {
+            font-size: 28px;
+            opacity: 1;
+            background-image: linear-gradient($color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+
 
 .command {
     display: flex;

@@ -16,7 +16,12 @@
 </head>
 
 <body>
-
+    <section class="loader">
+        <div><span class="loader__circle"></span>
+            <!-- <p>Chargement...</p> -->
+        </div>
+    </section>
+    
     <header class="header">
         <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
     </header>
@@ -52,25 +57,30 @@
                 </li>
             </ol>
         </section>
+        
+        <!-- section Restaurants  -->
         <section class="resto">
             <h2>Restaurants</h2>
             <div class="resto__cards">
 
                 <article class="card">
-                    <a class="card__link" href="#">
-                        <span class="new">Nouveau</span>
-                        <img class="card__photo" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                            alt="photo du menu La palette du goût">
-                        <div class="card__content">
-                            <div class="card__text">
+                        <a class="card__link" href="#">
+                            <span class="new">Nouveau</span>
+                            <img class="card__photo" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="photo du menu La palette du goût">
+                            <div class="card__content">
+                                <div class="card__text">
 
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
 
+                                </div>
+                                <div class="item-like-home">
+                                    <i class="heart-empty fa-regular fa-heart"></i>
+                                    <i class="heart-full fa-solid fa-heart"></i>
+                                </div>
                             </div>
-                            <div><i class="heart fa-regular fa-heart"></i></div>
-                        </div>
-                    </a>
+                        </a>
 
                 </article>
 
@@ -85,7 +95,10 @@
                                 <p>Charonne</p>
 
                             </div>
-                            <div><i class="heart fa-regular fa-heart"></i></div>
+                            <div class="item-like-home">
+                                <i class="heart-empty fa-regular fa-heart"></i>
+                                <i class="heart-full fa-solid fa-heart"></i>
+                            </div>
                         </div>
                     </a>
 
@@ -102,7 +115,10 @@
                                 <p>Cité Rouge</p>
 
                             </div>
-                            <div><i class="heart fa-regular fa-heart"></i></div>
+                            <div class="item-like-home">
+                                <i class="heart-empty fa-regular fa-heart"></i>
+                                <i class="heart-full fa-solid fa-heart"></i>
+                            </div>
                         </div>
                     </a>
 
@@ -118,7 +134,10 @@
                                 <p>Folie-Méricourt</p>
 
                             </div>
-                            <div><i class="heart fa-regular fa-heart"></i></div>
+                            <div class="item-like-home">
+                                <i class="heart-empty fa-regular fa-heart"></i>
+                                <i class="heart-full fa-solid fa-heart"></i>
+                            </div>
                         </div>
                     </a>
 

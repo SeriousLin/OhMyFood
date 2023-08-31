@@ -2,6 +2,11 @@
     font-family: 'Roboto';
     font-size: $font-size;
     
+    
+}
+
+body {
+    position: relative;
 }
 
 h1 h2 {
@@ -29,7 +34,11 @@ ul {
 }
 
 .subtitle {
-    text-transform: uppercase;
-    font-weight: 300;
     margin: 40px 0px 12px 13px;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 7px;
+        
+    }
 }

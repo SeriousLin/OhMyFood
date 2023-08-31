@@ -1,3 +1,38 @@
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+  }
+  85% {
+    opacity: 0.8;
+    position: absolute;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Colors */
 /* Background colors */
 /* Font size */
@@ -10,6 +45,10 @@
 * {
   font-family: "Roboto";
   font-size: 16px;
+}
+
+body {
+  position: relative;
 }
 
 h1 h2 {
@@ -34,9 +73,12 @@ ul {
 }
 
 .subtitle {
+  margin: 40px 0px 12px 13px;
+}
+.subtitle h2 {
   text-transform: uppercase;
   font-weight: 300;
-  margin: 40px 0px 12px 13px;
+  margin-bottom: 7px;
 }
 
 .header {
@@ -221,9 +263,65 @@ ul {
   margin: 27px auto 50px;
 }
 
-.heart {
+.item-like-home {
+  position: relative;
+}
+.item-like-home i {
+  font-size: 28px;
+  position: absolute;
+  right: 14px;
+  bottom: -12px;
+}
+.item-like-home .heart-full {
   font-size: 28px;
   cursor: pointer;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.item-like-home .heart-full:hover {
+  font-size: 28px;
+  opacity: 1;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.item-like-home .heart-full:active {
+  font-size: 28px;
+  opacity: 1;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.item-like i {
+  font-size: 28px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.item-like .heart-full {
+  font-size: 28px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.item-like .heart-full:hover {
+  font-size: 28px;
+  opacity: 1;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.item-like .heart-full:active {
+  font-size: 28px;
+  opacity: 1;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .command {
@@ -271,6 +369,35 @@ main .location__item {
   color: #353535;
 }
 
+section.loader {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  animation: loader 3s ease-in-out;
+  opacity: 0;
+}
+section.loader .loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+section.loader .loader__circle::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 184px;
+  left: 150px;
+  bottom: -6px;
+  right: -6px;
+  border: 6px solid #9d9595;
+  border-top-color: #9356DC;
+  animation: spin 1s linear infinite;
+}
+
 .main {
   width: 100%;
   height: auto;
@@ -307,6 +434,8 @@ main .location__item {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
+  display: flex;
+  align-items: flex-end;
 }
 .main .menu .menu-cards {
   display: flex;
@@ -321,39 +450,44 @@ main .location__item {
   background-color: #FFFFFF;
   padding: 13px;
   border-radius: 15px;
-  width: 86%;
+  width: 93%;
+  box-sizing: border-box;
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  animation: slideUp 1s both;
+}
+.main .menu .menu-cards .meal:hover .meal__check {
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+}
+.main .menu .menu-cards .meal:hover .euro {
+  transform: translateX(-65px);
+  -webkit-transform: translateX(-65px);
+}
+.main .menu .menu-cards .meal:hover .item-check {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 .main .menu .menu-cards .meal__check {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 65px;
-  padding: 26px 0px;
+  padding: 23px 0px;
   border-radius: 0px 15px 15px 0px;
   background-color: #99e2d0;
   position: absolute;
   right: 0;
   transition: transform 0.4s ease-in-out;
   transform: translate(66px, 0px);
+  -webkit-transform: translate(66px, 0px);
 }
 .main .menu .menu-cards .meal__check .item-check {
   color: #FFFFFF;
-  transition: transform 1s;
   font-size: 20px;
-}
-.main .menu .menu-cards .meal__check .item-check:hover {
-  transition: 0.5s ease-in-out;
-  transform: rotate(360deg);
-}
-.main .menu .menu-cards .meal .meal__check:hover {
-  transition: all 0.4s ease-in-out;
-  transform: translate(0, 0);
-}
-.main .menu .menu-cards .meal .meal__check::after {
-  transform: translate(0, 0);
+  transition: transform 1s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
 }
 .main .menu .menu-cards .meal__content h3 {
   margin: 0;
@@ -368,6 +502,8 @@ main .location__item {
   align-items: flex-end;
   margin: 0;
   font-weight: 700;
+  transition: transform 0.4s ease-in-out;
+  padding-top: 20px;
 }
 .main .menu .menu-cards .meal .euro p {
   margin: 0;
