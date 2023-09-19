@@ -20,13 +20,10 @@
 }
 
 .reservation__btn {
-    height: auto;
     margin: 27px auto 50px;
 }
 
 .item-like-home {
-
-    // position: relative;
     i {
         font-size: 28px;
         position: absolute;
@@ -38,8 +35,6 @@
     .heart-full {
         font-size: 28px;
         cursor: pointer;
-        // position: absolute;
-        // right: 0px;
         opacity: 0;
         transition: all 0.4s;
 
@@ -107,7 +102,6 @@
     margin: 0;
 
     &__btn {
-        height: auto;
         text-align: center;
         padding: 20px 0px 40px;
     }

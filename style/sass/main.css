@@ -379,8 +379,6 @@ ul {
 }
 
 .reservation__btn {
-  width: 100%;
-  height: auto;
   margin: 27px auto 50px;
 }
 
@@ -450,8 +448,6 @@ ul {
   margin: 0;
 }
 .command__btn {
-  width: 100%;
-  height: auto;
   text-align: center;
   padding: 20px 0px 40px;
 }
