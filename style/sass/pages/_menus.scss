@@ -256,4 +256,10 @@ section.loader {
         }
     }
 
+    @media screen and (min-width:1440px) {
+        width: 74%;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
 }

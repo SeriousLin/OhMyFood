@@ -691,4 +691,11 @@ section.loader .loader__circle::after {
   .main .menu__cards {
     align-items: flex-start;
   }
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    width: 74%;
+    justify-content: center;
+    margin: 20px auto;
+  }
 }/*# sourceMappingURL=main.css.map */
