@@ -552,7 +552,7 @@ section.loader .loader__circle::after {
   margin: 0px auto -73px;
 }
 .main .menu {
-  width: 95%;
+  width: 92%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -669,9 +669,6 @@ section.loader .loader__circle::after {
   .main {
     width: 90%;
   }
-  .main .menu {
-    width: 74%;
-  }
   .main .menu__top {
     text-align: center;
     gap: 24px;
@@ -681,7 +678,7 @@ section.loader .loader__circle::after {
     align-items: flex-start;
   }
   .main .menu__content {
-    width: 74%;
+    width: 51%;
     justify-content: center;
     margin: 20px auto;
   }
@@ -694,7 +691,7 @@ section.loader .loader__circle::after {
     align-items: flex-start;
   }
   .main .menu__content {
-    width: 74%;
+    width: 53%;
     justify-content: center;
     margin: 20px auto;
   }
