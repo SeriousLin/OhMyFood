@@ -552,7 +552,7 @@ section.loader .loader__circle::after {
   margin: 0px auto -73px;
 }
 .main .menu {
-  width: 98%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -598,7 +598,7 @@ section.loader .loader__circle::after {
   background-color: #FFFFFF;
   padding: 13px;
   border-radius: 15px;
-  width: 93%;
+  width: 100%;
   box-sizing: border-box;
   cursor: pointer;
   overflow: hidden;
@@ -610,7 +610,7 @@ section.loader .loader__circle::after {
   -webkit-transform: translate(0px, 0px);
 }
 .main .menu .menu-cards .meal:hover .meal__content {
-  width: 250px;
+  width: 70%;
 }
 .main .menu .menu-cards .meal:hover .euro {
   transform: translateX(-65px);
@@ -677,6 +677,9 @@ section.loader .loader__circle::after {
     gap: 24px;
     justify-content: center;
   }
+  .main .meal:hover .meal__content {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .main {
@@ -685,7 +688,7 @@ section.loader .loader__circle::after {
   .main .menu {
     width: 74%;
   }
-  .main .menu .meal {
-    width: 96%;
+  .main .menu__cards {
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=main.css.map */

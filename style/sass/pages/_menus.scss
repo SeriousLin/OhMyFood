@@ -23,12 +23,6 @@ section.loader {
     opacity: 0;
 
     .loader {
-        // width: 50px;
-        // height: 50px;
-        // display: inline-block;
-        // vertical-align: middle;
-        // position: relative;
-
         &__container {
             display: flex;
             align-items: center;
@@ -73,18 +67,10 @@ section.loader {
 
 
     .menu {
-        width: 98%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // background-color: $bg-gray-light;
-        // border-top-left-radius: 40px;
-        // border-top-right-radius: 40px;
-        // position: relative;
-        // top: -61px;
-        // gap: 40px;
-        // display: flex;
-        // flex-direction: column;
 
         &__content {
             width: 98%;
@@ -133,7 +119,7 @@ section.loader {
                 background-color: $bg-white;
                 padding: 13px;
                 border-radius: 15px;
-                width: 93%;
+                width: 100%;
                 box-sizing: border-box;
                 cursor: pointer;
                 overflow: hidden;
@@ -151,7 +137,7 @@ section.loader {
                     }
 
                     .meal__content {
-                        width: 250px;
+                        width: 70%;
                     }
 
                     .euro {
@@ -244,6 +230,16 @@ section.loader {
                 gap: 24px;
                 justify-content: center;
             }
+
+        }
+
+        .meal {
+            &:hover {
+
+                .meal__content{
+                    width: 100%;
+                }
+              }
         }
     }
 
@@ -253,13 +249,10 @@ section.loader {
         .menu {
             width: 74%;
 
-            // &__content {
-            //     width: 84%;
-            // }
-
-            .meal {
-                width: 96%;
+            &__cards {
+                align-items: flex-start;
             }
+
         }
     }
 
