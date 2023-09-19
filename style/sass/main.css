@@ -667,7 +667,7 @@ section.loader .loader__circle::after {
 }
 @media screen and (min-width: 768px) {
   .main {
-    width: 80%;
+    width: 90%;
   }
   .main .menu {
     width: 74%;
@@ -677,23 +677,23 @@ section.loader .loader__circle::after {
     gap: 24px;
     justify-content: center;
   }
+  .main .menu__cards {
+    align-items: flex-start;
+  }
+  .main .menu__content {
+    width: 74%;
+    justify-content: center;
+    margin: 20px auto;
+  }
   .main .meal:hover .meal__content {
     width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .main {
-    width: 80%;
-  }
-  .main .menu {
-    width: 74%;
-  }
   .main .menu__cards {
     align-items: flex-start;
   }
-}
-@media screen and (min-width: 1440px) {
-  .main {
+  .main .menu__content {
     width: 74%;
     justify-content: center;
     margin: 20px auto;

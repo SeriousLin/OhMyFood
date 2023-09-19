@@ -220,7 +220,7 @@ section.loader {
     }
 
     @media screen and (min-width:768px) {
-        width: 80%;
+        width: 90%;
 
         .menu {
             width: 74%;
@@ -231,35 +231,43 @@ section.loader {
                 justify-content: center;
             }
 
+            &__cards {
+                align-items: flex-start;
+            }
+
+            &__content {
+                width: 74%;
+                justify-content: center;
+                margin: 20px auto;
+            }
         }
 
         .meal {
             &:hover {
 
-                .meal__content{
+                .meal__content {
                     width: 100%;
                 }
-              }
+            }
         }
     }
 
     @media screen and (min-width:1024px) {
-        width: 80%;
+
 
         .menu {
-            width: 74%;
-
             &__cards {
                 align-items: flex-start;
             }
 
+            &__content {
+                width: 74%;
+                justify-content: center;
+                margin: 20px auto;
+            }
         }
     }
 
-    @media screen and (min-width:1440px) {
-        width: 74%;
-        justify-content: center;
-        margin: 20px auto;
-    }
+ 
 
 }
