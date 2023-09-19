@@ -17,21 +17,24 @@
 
 <body>
     <section class="loader">
-        <div><span class="loader__circle"></span>
+        <div class="loader__container"><span class="loader__circle"></span>
             <!-- <p>Chargement...</p> -->
         </div>
     </section>
 
     <header class="header">
-        <a class="header__back">
+        <a href="index.html" class="header__back">
             <i class="back fa-solid fa-arrow-left"></i>
         </a>
         <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
     </header>
 
-    <main class="main">
-        <img class="main__banner" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+    <div>
+        <img class="banner" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
             alt="menu la palette du goût">
+    </div>
+
+    <main class="main">
         <section class="menu">
             <div class="menu__top">
                 <h1 class="menu-title">La note enchantée</h1>
@@ -40,7 +43,7 @@
                     <i class="heart-full fa-solid fa-heart"></i>
                 </div>
             </div>
-            <div>
+            <div class="menu__content">
                 <div class="subtitle">
                     <h2>Entrées</h2>
                 </div>
@@ -90,7 +93,7 @@
                     </article>
                 </div>
             </div>
-            <div>
+            <div class="menu__content">
                 <div class="subtitle">
                     <h2>Plats</h2>
                 </div>
@@ -129,7 +132,7 @@
                     </article>
                 </div>
             </div>
-            <div>
+            <div class="menu__content">
                 <div class="subtitle">
                     <h2>Desserts</h2>
                 </div>

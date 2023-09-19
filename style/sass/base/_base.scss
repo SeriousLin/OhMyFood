@@ -1,13 +1,11 @@
-*{
+* {
     font-family: 'Roboto';
     font-size: $font-size;
-    
-    
+
+
 }
 
-body {
-    position: relative;
-}
+
 
 h1 h2 {
     font-size: $font-size-title;
@@ -17,10 +15,8 @@ h1 h2 {
 body {
     background: $bg-white ;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 
-    
 }
 
 
@@ -29,16 +25,19 @@ ul {
     padding: 0;
 }
 
-.card, .steps__items, .meal {
-    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.2);
+.card,
+.steps__items,
+.meal {
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle {
     margin: 40px 0px 12px 13px;
+
     h2 {
         text-transform: uppercase;
         font-weight: 300;
         margin-bottom: 7px;
-        
+
     }
 }

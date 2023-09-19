@@ -11,6 +11,10 @@ main .location {
         margin: auto 17px;
     }
 
+    &__text {
+        font-weight: 600;
+    }
+
     
 
 }
@@ -28,6 +32,10 @@ main .location {
         width: 73%;
         margin: 40px auto 0px;
         font-size: $font-size-title;
+
+        @media screen and (min-width:1024px) {
+            font-size: 40px;
+        }
     }
 
     &__text {

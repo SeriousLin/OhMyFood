@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    margin: 6px auto;
+    padding: 9px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,12 +15,15 @@
     }
 
     &__back {
-        position: absolute;
-        top: 25%;
-        left: 6%;
+        
 
-        .back i {
-            font-size: 20px;
+        .back  {
+            font-size: 18px;
+            position: absolute;
+            left: 23px;
+            bottom: 18px;
+            color: $color-gray;
+            
         }
     }
  }

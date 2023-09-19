@@ -1,25 +1,27 @@
 .footer {
-    width: 100%;
     height: auto;
     color: $color-primary-light;
     background: $bg-gray;
-    
+    padding: 22px 25px 10px 21px;
+
     &__content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 22px 25px;
+        width: 59%;
     }
 
+
+
     h2 {
-        margin-bottom: 0px;
+        margin: 0;
         font-family: 'Shrikhand';
         font-size: 18px;
         font-weight: 400;
         font-style: italic;
-        
+
     }
-    
+
     ul {
         display: flex;
         flex-direction: column;
@@ -28,16 +30,70 @@
 
     &__nav {
         padding: 0px;
-        
-   
-        
-       
-   }
 
-   .nav__link {
-    color: $color-primary-light;
-    
-    text-decoration: none;
-  }
+        .fa-utensils {
+            font-size: 13px;
+            margin-right: 11px;
+        }
+
+        .fa-handshake-angle {
+            font-size: 13px;
+            margin-right: 8px;
+        }
+
+    }
+
+    .nav__link {
+        color: $color-primary-light;
+
+        text-decoration: none;
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 30px 25px 30px 25px;
+
+
+        &__content {
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            padding-top: 30px;
+            width: 100%;
+            gap: 30px;
+            margin: 0;
+        }
+
+
+        ul {
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 21px;
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+
+        padding: 30px 25px 30px 25px;
+
+
+        &__content {
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            padding-top: 30px;
+            width: 100%;
+            gap: 51px;
+            margin: 0;
+        }
+
+
+        ul {
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 21px;
+            width: 100%;
+            margin: 0;
+        }
+
+    }
 }
-

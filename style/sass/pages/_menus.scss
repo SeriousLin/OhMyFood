@@ -1,3 +1,20 @@
+body {
+    .banner {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+        @media screen and (min-width:768px) {
+            height: 400px;
+        }
+
+        @media screen and (min-width:1440px) {
+            height: 400px;
+        }
+
+    }
+}
+
 section.loader {
     background-color: #ffffff;
     width: 100%;
@@ -6,13 +23,20 @@ section.loader {
     opacity: 0;
 
     .loader {
-        width: 50px;
-        height: 50px;
-        display: inline-block;
-        vertical-align: middle;
-        position: relative;
+        // width: 50px;
+        // height: 50px;
+        // display: inline-block;
+        // vertical-align: middle;
+        // position: relative;
+
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         &__circle {
+            position: relative;
 
             &::after {
                 content: '';
@@ -20,10 +44,8 @@ section.loader {
                 height: 50px;
                 border-radius: 50px;
                 position: absolute;
-                top: 184px;
-                left: 150px;
-                bottom: -6px;
-                right: -6px;
+                top: 24rem;
+                left: -2rem;
                 border: 6px solid #9d9595;
                 border-top-color: $color-primary;
                 animation: spin 1s linear infinite;
@@ -39,26 +61,45 @@ section.loader {
     width: 100%;
     height: auto;
     background-color: $bg-gray-light;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    top: -73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto -73px;
 
-    &__banner {
-        width: 100%;
-        height: 275px;
-        object-fit: cover;
-    }
+
 
     .menu {
-        width: 100%;
-        background-color: $bg-gray-light;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-        position: relative;
-        top: -61px;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // background-color: $bg-gray-light;
+        // border-top-left-radius: 40px;
+        // border-top-right-radius: 40px;
+        // position: relative;
+        // top: -61px;
+        // gap: 40px;
+        // display: flex;
+        // flex-direction: column;
+
+        &__content {
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 0px;
+        }
 
         &__top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 32px 17px 0px 17px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             .menu-title {
                 font-family: 'Shrikhand';
@@ -106,8 +147,12 @@ section.loader {
                         transform: translate(0px, 0px);
                         -webkit-transform: translate(0px, 0px);
 
+
                     }
 
+                    .meal__content {
+                        width: 250px;
+                    }
 
                     .euro {
                         transform: translateX(-65px);
@@ -118,7 +163,7 @@ section.loader {
                     .item-check {
                         transform: rotate(360deg);
                         -webkit-transform: rotate(360deg);
-                        
+
 
 
                     }
@@ -143,7 +188,7 @@ section.loader {
                         font-size: 20px;
                         transition: transform 1s ease-in-out;
                         -webkit-transition: transform 0.5s ease-in-out;
-                       
+
                     }
                 }
 
@@ -151,14 +196,22 @@ section.loader {
 
 
                 &__content {
+
+
                     h3 {
                         margin: 0;
                         font-size: 18px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
                     }
 
                     p {
                         margin: 0;
                         font-size: 15px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
                     }
                 }
 
@@ -179,4 +232,35 @@ section.loader {
 
         }
     }
+
+    @media screen and (min-width:768px) {
+        width: 80%;
+
+        .menu {
+            width: 74%;
+
+            &__top {
+                text-align: center;
+                gap: 24px;
+                justify-content: center;
+            }
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        width: 80%;
+
+        .menu {
+            width: 74%;
+
+            // &__content {
+            //     width: 84%;
+            // }
+
+            .meal {
+                width: 96%;
+            }
+        }
+    }
+
 }
