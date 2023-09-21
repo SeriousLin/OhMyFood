@@ -33,11 +33,7 @@
     transform: rotate(360deg);
   }
 }
-/* Colors */
-/* Background colors */
-/* Font size */
-/* Button */
-/* Les polices */
+
 @font-face {
   font-family: "Roboto";
   src: url("/style/police/Roboto-Regular.ttf");

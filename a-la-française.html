@@ -16,12 +16,14 @@
 </head>
 
 <body>
-    <section class="loader">
-        <div class="loader__container"><span class="loader__circle"></span>
-            <!-- <p>Chargement...</p> -->
+    <!-- Loader -->
+    <div class="loader">
+        <div 
+            class="loader__container"><span class="loader__circle"></span>
         </div>
-    </section>
+    </div>
 
+    <!-- header -->
     <header class="header">
         <a href="index.html" class="header__back">
             <i class="back fa-solid fa-arrow-left"></i>
@@ -29,11 +31,13 @@
         <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
     </header>
 
+    <!-- Banner -->
     <div>
         <img class="banner" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
             alt="menu la palette du goût">
     </div>
 
+    <!-- Contenu pricipal carte menu -->
     <main class="main">
 
         <section class="menu">
@@ -161,13 +165,16 @@
                     </article>
                 </div>
             </div>
+            <!-- Partie bouton commande -->
             <div class="command">
-                <a class="command__btn" href="">
-                    <button class="btn">Commander</button>
-                </a>
+                <form class="command__btn">
+                    <input type="button" class="btn" value="Commander"/>
+                </form>
             </div>
         </section>
     </main>
+
+    <!-- Partie footer -->
     <footer class="footer">
         <div class="footer__content">
             <h2>ohmyfood</h2>
