@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <section class="loader">
-        <div class="loader__container"><span class="loader__circle"></span>
-            <!-- <p>Chargement...</p> -->
+    <div class="loader">
+        <div 
+            class="loader__container"><span class="loader__circle"></span>
         </div>
-    </section>
+    </div>
 
     <header class="header">
         <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
@@ -33,9 +33,9 @@
         <section class="reservation">
             <h1 class="reservation__title">Réservez le menu qui vous convient</h1>
             <p class="reservation__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <a class="reservation__btn" href="#restaurants">
-                <button class="btn">Explorer nos restaurants</button>
-            </a>
+                <form class="reservation__btn">
+                    <input type="button" class="btn" value="Explorer nos restaurants" onclick="window.location.href='#restaurants'" />
+                </form>
         </section>
         <section class="steps">
             <div class="steps__content">

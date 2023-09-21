@@ -510,22 +510,22 @@ body .banner {
   }
 }
 
-section.loader {
+.loader {
   background-color: #ffffff;
   width: 100%;
   height: 100%;
   animation: loader 3s ease-in-out;
   opacity: 0;
 }
-section.loader .loader__container {
+.loader__container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-section.loader .loader__circle {
+.loader__circle {
   position: relative;
 }
-section.loader .loader__circle::after {
+.loader__circle::after {
   content: "";
   width: 50px;
   height: 50px;
